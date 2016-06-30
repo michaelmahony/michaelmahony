@@ -3,8 +3,6 @@ body {
   /*background-image: url(montana_hill.jpg);*/
   /*background-size: cover;*/
 
-
-
   font-family: 'Roboto', sans-serif;
 }
 
@@ -19,14 +17,24 @@ header {
   margin: 1em;
 }
 
-img {
+h1, h2 {
+  text-align: center;
+}
+
+.about img {
   float: left;
-  max-width: 400px;
+  max-height: 500px;
   padding: 1em;
+  align-self: center;
+  border-radius: 50%
 }
 
 .page {
   margin: auto;
+}
+
+.page-break{
+  height: 25vh;
 }
 
 .content {
@@ -38,4 +46,45 @@ img {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolio .item {
+  height: 250px;
+  width: 500px;
+  border: 2px solid black;
+  margin: 1em;
+  /*background*/
+}
+
+.portfolio img {
+  max-height: 250px;
+  max-width: 500px;
+}
+
+#textbook-retriever {
+  background-image: url(textbook-retriever.jpg);
+  background-size: contain;
+}
+
+#crimealertsdc {
+  background-image: url(crimealertsdc.jpg);
+  background-size: contain;
+}
+
+#accounting-calc {
+  background-image: url(AccountingCalc.png);
+  background-size: contain;
 }
